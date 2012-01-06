@@ -1,4 +1,10 @@
 Commonconcept::Application.routes.draw do
+  resources :stuff
+
+  resources :thoughts
+
+  resources :people
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
