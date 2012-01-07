@@ -1,0 +1,8 @@
+background: rgb(239,239,239); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(239,239,239,1) 0%, rgba(199,206,194,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(239,239,239,1)), color-stop(100%,rgba(199,206,194,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(239,239,239,1) 0%,rgba(199,206,194,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(239,239,239,1) 0%,rgba(199,206,194,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(239,239,239,1) 0%,rgba(199,206,194,1) 100%); /* IE10+ */
+background: radial-gradient(center, ellipse cover, rgba(239,239,239,1) 0%,rgba(199,206,194,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#c7cec2',GradientType=1 ); 

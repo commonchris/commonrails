@@ -1,0 +1,4 @@
+// needs latest Compass, add '@import "compass"' to your scss
+background-color: #efefef; // Old browsers
+@include filter-gradient(#efefef, #c7cec2, horizontal); // IE6-9 fallback on horizontal gradient
+@include background-image(radial-gradient(center, ellipse cover, #efefef 0%,#c7cec2 100%));
