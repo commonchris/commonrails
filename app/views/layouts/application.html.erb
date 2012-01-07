@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Common Concept | <%= @title %></title>
+    <title><%= title %></title>
     <%= csrf_meta_tag %>
+    <!-- [if lt IE 9]> load script that mocks user for using IE  <![endif]-->
+    <%= stylesheet_link_tag 'screen', :media => 'screen' %>
+    <%= stylesheet_link_tag 'print', :media => 'print' %>
+    <%= stylesheet_link_tag 'custom', :media => 'screen' %>
   </head>
   <body>
-    <%= yield %>
+    <div class="container">
+      <header>
+        <nav class="round">
+          <ul>
+            <li><%= link_to "Home", '#' %> </li>
+            <li><%= link_to "Help", '#' %> </li>
+            <li><%= link_to "Sign in", '#' %> </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="padding"> &nbsp; <br />  </div>
+      <section class="round">
+        <%= image_tag("logo_banner.png", :alt => "Common Concept", :class => "round") %>
+        <br />
+        <%= yield %>
+      </section>
+    </div>
   </body>
 </html>

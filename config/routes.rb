@@ -4,6 +4,8 @@ Commonconcept::Application.routes.draw do
   get "pages/about"
 
 
+  #  root :to => 'pages/home'
+  
   resources :stuff
   resources :thoughts
   resources :people
@@ -55,7 +57,7 @@ Commonconcept::Application.routes.draw do
   #     resources :products
   #   end
 
-  # You can have the root of your site routed with "root"
+  # You can have the root of your site routed with "r# oot"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
 
