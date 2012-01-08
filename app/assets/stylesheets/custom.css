@@ -1,9 +1,9 @@
 .container {
-  width: 690px;
+  width: 676px;
 }
 
 body {
-  background: #dde;
+  background: #eef;
 }
 
 header {
@@ -103,7 +103,7 @@ nav ul li a:hover {
 footer {
   text-align: center;
   margin-top: 10px;
-  width: 710px;
+  width: 676px;
   margin-left: auto;
   margin-right: auto;
 }

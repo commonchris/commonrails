@@ -14,12 +14,14 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-group :development do
-  gem 'rspec-rails'
+group :test, :development do
+  gem 'rspec'
 end
 
 group :test do
-  gem 'rspec'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'capybara'
   gem 'webrat'
 end
 

@@ -1,0 +1,2 @@
+module Mingle::PeopleHelper
+end

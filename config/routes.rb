@@ -1,19 +1,28 @@
 Commonconcept::Application.routes.draw do
+
+  match '/join',    :to => 'mingle/people#join'
+
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
-  match '/help',    :to => 'pages#help'
-  # match '/',        :to => 'pages#home'
+  # match '/help',    :to => 'pages#help'
+  match '/',        :to => 'pages#home'
+ 
+  match '/think',   :to => 'pages#think'
+  match '/mingle',  :to => 'pages#mingle'
+  match '/make',    :to => 'pages#make' 
 
-  # get "pages/home"
-  # get "pages/contact"
-  # get "pages/about"
+  namespace :mingle do
+    resources :people
+  end
+ 
+#  resources :stuff
+#  resources :thoughts
+#  resources :people
+
+
+
 
   root :to => 'pages#home'
-  
-  resources :stuff
-  resources :thoughts
-  resources :people
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

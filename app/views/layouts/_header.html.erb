@@ -1,9 +1,11 @@
 <header>
-  <nav class="round">
+  <% logo = image_tag("logo_banner.png", :alt => "Common Concept", :class => "round") %>
+  <%= link_to logo, root_path %>
+  <nav class="round"> 
     <ul>
-      <li><%= link_to "Home", '#' %> </li>
-      <li><%= link_to "Help", '#' %> </li>
-      <li><%= link_to "Sign in", '#' %> </li>
+      <li><%= link_to "Think", 'think_path' %> </li>
+      <li><%= link_to "Mingle", 'mingle_path' %> </li>
+      <li><%= link_to "Make", 'make_path' %> </li>
     </ul>
   </nav>
 </header>

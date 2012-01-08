@@ -11,8 +11,20 @@ class PagesController < ApplicationController
     @title = "About"
   end
 
-  def help
-    @title = "Help"
+  def think
+    @title = "Think"
   end
+ 
+#  def mingle
+#    @title = "Mingle"
+#  end
+
+  def make 
+    @title = "Make"
+  end
+
+  # def help
+  # @title = "Help"
+  # end
 
 end
