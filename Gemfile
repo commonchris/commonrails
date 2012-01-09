@@ -15,7 +15,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 group :test, :development do
-  gem 'rspec'
+  gem 'rspec-rails'
 end
 
 group :test do
@@ -23,6 +23,8 @@ group :test do
   gem 'database_cleaner'
   gem 'capybara'
   gem 'webrat'
+  gem 'factory_girl'
+  gem 'launchy'
 end
 
 # gem 'taps' # for the push of data to heroku

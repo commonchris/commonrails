@@ -1,6 +1,8 @@
 Commonconcept::Application.routes.draw do
 
-  match '/join',    :to => 'mingle/people#join'
+  match '/join',    :to => 'mingle/people#new'
+
+
 
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
